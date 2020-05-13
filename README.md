@@ -7,3 +7,6 @@
 - Express
 - ESLint
 - eslint-import-resolver-typescript
+- Prettier
+- eslint-config-prettier
+- eslint-plugin-prettier
