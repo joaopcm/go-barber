@@ -6,3 +6,4 @@
 - ts-node-dev
 - Express
 - ESLint
+- eslint-import-resolver-typescript
