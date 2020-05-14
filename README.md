@@ -1,6 +1,6 @@
 # go-barber
 
-### Used technologies
+### Dependencies
 - TypeScript
 - EditorConfig
 - ts-node-dev
@@ -12,3 +12,11 @@
 - eslint-plugin-prettier
 - uuidv4
 - date-fns
+
+### Principles and patterns
+- Services
+- Repositories
+- Don't Repeat Yourself
+- Data Transfer Object
+- Dependency Invertion Principle (SOLID)
+- Single Responsability Principle (SOLID)
