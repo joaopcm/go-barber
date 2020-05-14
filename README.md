@@ -29,3 +29,4 @@
 - Data Transfer Object
 - Dependency Invertion Principle (SOLID)
 - Single Responsability Principle (SOLID)
+- Keep It Simple & Stupid (KISS)
