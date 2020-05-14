@@ -20,6 +20,7 @@
 - date-fns
 - typeorm
 - pg
+- reflect-metadata
 
 ### Principles, concerns and patterns
 - Services
