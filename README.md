@@ -5,19 +5,21 @@
 - DBeaver
 - MongoDB Compass
 - Docker
+- EditorConfig
 
 ### Dependencies
-- TypeScript
-- EditorConfig
+- typescript
 - ts-node-dev
-- Express
-- ESLint
+- express
+- eslint
 - eslint-import-resolver-typescript
-- Prettier
+- prettier
 - eslint-config-prettier
 - eslint-plugin-prettier
 - uuidv4
 - date-fns
+- typeorm
+- pg
 
 ### Principles, concerns and patterns
 - Services
