@@ -1,5 +1,11 @@
 # go-barber
 
+### Tools
+- Visual Studio Code
+- DBeaver
+- MongoDB Compass
+- Docker
+
 ### Dependencies
 - TypeScript
 - EditorConfig
@@ -13,7 +19,7 @@
 - uuidv4
 - date-fns
 
-### Principles and patterns
+### Principles, concerns and patterns
 - Services
 - Repositories
 - Don't Repeat Yourself
