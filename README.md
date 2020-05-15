@@ -25,6 +25,7 @@
 - bcryptjs
 - jsonwebtoken
 - multer
+- express-async-errors
 
 ### Principles, concerns and patterns
 - Services
