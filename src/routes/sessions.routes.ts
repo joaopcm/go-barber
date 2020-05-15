@@ -1,10 +1,10 @@
-import { Router, Response, Request } from 'express';
+import { Router } from 'express';
 
 import CreateSessionService from '../services/CreateSessionService';
 
 const usersRouter = Router();
 
-usersRouter.post('/', async (request: Request, response: Response) => {
+usersRouter.post('/', async (request, response) => {
   try {
     const { email, password } = request.body;
     const createSession = new CreateSessionService();

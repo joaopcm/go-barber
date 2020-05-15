@@ -6,6 +6,7 @@
 - MongoDB Compass
 - Docker
 - EditorConfig
+- Insomnia
 
 ### Dependencies
 - typescript

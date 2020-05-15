@@ -3,6 +3,7 @@ import { compare } from 'bcryptjs';
 import { sign } from 'jsonwebtoken';
 
 import User from '../models/User';
+import authConfig from '../config/auth';
 
 interface RequestDTO {
   email: string;
@@ -29,9 +30,10 @@ class CreateSessionService {
     }
 
     delete user.password;
-    const token = sign({}, 'e528905690c75a9bd887176c67a47de6', {
+    const { secret, expiresIn } = authConfig.jwt;
+    const token = sign({}, secret, {
       subject: user.id,
-      expiresIn: '1d',
+      expiresIn,
     });
 
     return { user, token };
