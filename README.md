@@ -22,6 +22,7 @@
 - pg
 - reflect-metadata
 - bcryptjs
+- jsonwebtoken
 
 ### Principles, concerns and patterns
 - Services
