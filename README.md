@@ -21,6 +21,7 @@
 - typeorm
 - pg
 - reflect-metadata
+- bcryptjs
 
 ### Principles, concerns and patterns
 - Services
@@ -29,3 +30,4 @@
 - Data Transfer Object
 - Dependency Invertion Principle (SOLID)
 - Single Responsability Principle (SOLID)
+- Keep It Simple & Stupid (KISS)
