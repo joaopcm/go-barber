@@ -6,6 +6,7 @@
 - MongoDB Compass
 - Docker
 - EditorConfig
+- Insomnia
 
 ### Dependencies
 - typescript
@@ -22,6 +23,7 @@
 - pg
 - reflect-metadata
 - bcryptjs
+- jsonwebtoken
 
 ### Principles, concerns and patterns
 - Services
