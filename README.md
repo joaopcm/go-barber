@@ -21,6 +21,7 @@
 - typeorm
 - pg
 - reflect-metadata
+- bcryptjs
 
 ### Principles, concerns and patterns
 - Services
