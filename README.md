@@ -24,6 +24,7 @@
 - reflect-metadata
 - bcryptjs
 - jsonwebtoken
+- multer
 
 ### Principles, concerns and patterns
 - Services
