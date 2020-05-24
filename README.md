@@ -32,7 +32,11 @@
 - Repositories
 - Don't Repeat Yourself
 - Data Transfer Object
-- Dependency Invertion Principle (SOLID)
-- Single Responsability Principle (SOLID)
-- Keep It Simple & Stupid (KISS)
+- Dependency Invertion Principle
+- Single Responsability Principle
+- Keep It Simple & Stupid
 - DDD
+- Liskov Substitution Principle
+- Dependency Injection
+- Singleton
+- Controllers
