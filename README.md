@@ -1,4 +1,4 @@
-# go-barber
+# GoBarber
 
 ### Tools
 - Visual Studio Code
@@ -35,3 +35,4 @@
 - Dependency Invertion Principle (SOLID)
 - Single Responsability Principle (SOLID)
 - Keep It Simple & Stupid (KISS)
+- DDD
