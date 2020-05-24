@@ -6,7 +6,7 @@ import User from '../models/User';
 import authConfig from '../config/auth';
 import AppError from '../errors/AppError';
 
-interface RequestDTO {
+interface Request {
   email: string;
   password: string;
 }
@@ -17,17 +17,17 @@ interface Response {
 }
 
 class CreateSessionService {
-  public async execute({ email, password }: RequestDTO): Promise<Response> {
+  public async execute({ email, password }: Request): Promise<Response> {
     const usersRepository = getRepository(User);
 
     const user = await usersRepository.findOne({ where: { email } });
     if (!user) {
-      throw new AppError('Incorrect email/password combination', 401);
+      throw new AppError('Dados de acesso inválidos', 401);
     }
 
     const passwordMatched = await compare(password, user.password);
     if (!passwordMatched) {
-      throw new AppError('Incorrect email/password combination', 401);
+      throw new AppError('Dados de acesso inválidos', 401);
     }
 
     delete user.password;
