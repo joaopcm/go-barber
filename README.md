@@ -4,18 +4,18 @@
 ### Mapping features
 #### Forgot password
 **RF**
-- [ ] The user should be able to recovery his password providing his email address;
-- [ ] The user should be able to receive an email with instructions to recovery his password;
-- [ ] The user should be able to reset his password;
+- [x] The user should be able to recovery his password providing his email address;
+- [x] The user should be able to receive an email with instructions to recovery his password;
+- [x] The user should be able to reset his password;
 
 **RNF**
-- [ ] Use [Mailtrap](https://mailtrap.io/) to test mail in development environment;
-- [ ] Use Amazon SES to mail in production environment;
-- [ ] The mail must happens on background (background jobs);
+- [x] Use [Mailtrap](https://mailtrap.io/) to test mail in development environment;
+- [x] Use Amazon SES to mail in production environment;
+- [x] The mail must happens on background (background jobs);
 
 **RN**
-- [ ] The link sent by email to recovery password should expires in 2 hours;
-- [ ] The user must confirm his new password;
+- [x] The link sent by email to recovery password should expires in 2 hours;
+- [x] The user must confirm his new password;
 
 #### Profile update
 **RF**
