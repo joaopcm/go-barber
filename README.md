@@ -35,6 +35,7 @@
 **RNF**
 - [ ] The appointments for a given day must be cached;
 - [ ] The provider's notification must be storaged on MongoDB;
+- [ ] The provider's notification must be send in real-time with socket.io;
 
 **RN**
 - [ ] The notification must have a status like read or pending for the provider can manage it;
