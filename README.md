@@ -19,12 +19,12 @@
 
 #### Profile update
 **RF**
-- [ ] The user should be able to update his profile (name, email and password);
+- [x] The user should be able to update his profile (name, email and password);
 
 **RN**
-- [ ] The user should not be able to edit his email address to an already used email address;
-- [ ] The user must provide his old password to update his password;
-- [ ] The user must confirm his new password to update his current password;
+- [x] The user should not be able to edit his email address to an already used email address;
+- [x] The user must provide his old password to update his password;
+- [x] The user must confirm his new password to update his current password;
 
 #### Provider panel
 **RF**
