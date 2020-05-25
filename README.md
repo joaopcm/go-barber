@@ -8,25 +8,6 @@
 - EditorConfig
 - Insomnia
 
-### Dependencies
-- typescript
-- ts-node-dev
-- express
-- eslint
-- eslint-import-resolver-typescript
-- prettier
-- eslint-config-prettier
-- eslint-plugin-prettier
-- uuidv4
-- date-fns
-- typeorm
-- pg
-- reflect-metadata
-- bcryptjs
-- jsonwebtoken
-- multer
-- express-async-errors
-
 ### Principles, concerns and patterns
 - Services
 - Repositories
@@ -40,3 +21,6 @@
 - Dependency Injection
 - Singleton
 - Controllers
+- TDD
+- Unit tests
+- Integration tests
