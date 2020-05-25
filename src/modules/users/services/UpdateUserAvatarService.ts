@@ -23,7 +23,7 @@ class UpdateUserAvatarService {
     const user = await this.usersRepository.findById(user_id);
     if (!user) {
       throw new AppError(
-        'Somente usuários autenticados podem alterar a imagem de perfil',
+        'Somente usuários autenticados podem alterar a imagem de perfil.',
         401,
       );
     }

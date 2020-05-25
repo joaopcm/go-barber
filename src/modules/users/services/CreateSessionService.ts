@@ -7,6 +7,7 @@ import authConfig from '@config/auth';
 import AppError from '@shared/errors/AppError';
 import User from '../infra/typeorm/entities/User';
 import IUsersRespository from '../repositories/IUsersRepository';
+import IHashProvider from '../providers/HashProvider/models/IHashProvider';
 
 interface IRequest {
   email: string;
@@ -23,17 +24,23 @@ class CreateSessionService {
   constructor(
     @inject('UsersRepository')
     private usersRepository: IUsersRespository,
+
+    @inject('HashProvider')
+    private hashProvider: IHashProvider,
   ) {}
 
   public async execute({ email, password }: IRequest): Promise<IResponse> {
     const user = await this.usersRepository.findByEmail(email);
     if (!user) {
-      throw new AppError('Dados de acesso inválidos', 401);
+      throw new AppError('Dados de acesso inválidos.', 401);
     }
 
-    const passwordMatched = await compare(password, user.password);
+    const passwordMatched = await this.hashProvider.compareHash(
+      password,
+      user.password,
+    );
     if (!passwordMatched) {
-      throw new AppError('Dados de acesso inválidos', 401);
+      throw new AppError('Dados de acesso inválidos.', 401);
     }
 
     delete user.password;
