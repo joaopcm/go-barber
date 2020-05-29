@@ -15,6 +15,6 @@ export default class AppointmentController {
       date: parsedDate,
     });
 
-    return response.json({ error: false, data: appointment });
+    return response.json(appointment);
   }
 }

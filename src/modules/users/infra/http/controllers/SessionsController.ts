@@ -10,6 +10,6 @@ export default class SessionsController {
 
     const { user, token } = await createSession.execute({ email, password });
 
-    return response.json({ error: false, data: { user, token } });
+    return response.json({ user, token });
   }
 }
