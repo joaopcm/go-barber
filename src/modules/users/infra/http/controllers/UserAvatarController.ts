@@ -11,6 +11,6 @@ export default class UserAvatarController {
       avatarFileName: request.file.filename,
     });
 
-    return response.json({ error: false, data: user });
+    return response.json(user);
   }
 }

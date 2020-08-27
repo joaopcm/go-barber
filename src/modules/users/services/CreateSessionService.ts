@@ -1,12 +1,11 @@
 import 'reflect-metadata';
-import { compare } from 'bcryptjs';
 import { sign } from 'jsonwebtoken';
 import { injectable, inject } from 'tsyringe';
 
 import authConfig from '@config/auth';
 import AppError from '@shared/errors/AppError';
 import User from '../infra/typeorm/entities/User';
-import IUsersRespository from '../repositories/IUsersRepository';
+import IUsersRepository from '../repositories/IUsersRepository';
 import IHashProvider from '../providers/HashProvider/models/IHashProvider';
 
 interface IRequest {
@@ -23,7 +22,7 @@ interface IResponse {
 class CreateSessionService {
   constructor(
     @inject('UsersRepository')
-    private usersRepository: IUsersRespository,
+    private usersRepository: IUsersRepository,
 
     @inject('HashProvider')
     private hashProvider: IHashProvider,
